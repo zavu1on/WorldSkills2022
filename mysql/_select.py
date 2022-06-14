@@ -9,9 +9,9 @@ conn = mysql.connect(
 )
 cur = conn.cursor()
 
-cur.execute('SELECT CURDATE()')
-cur_date, = cur.fetchone()
+cur.execute('SELECT username, title FROM users JOIN newspapers ON users.id = newspapers.user_id;')
 
-print(cur_date)
+resp = cur.fetchall()
+print(resp)
 
 conn.close()
