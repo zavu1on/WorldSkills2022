@@ -8,7 +8,6 @@
 
 ### Материалы для обучения
 * [PyQT5](https://www.youtube.com/playlist?list=PL1FgJUcJJ03uO70zDLDF3oaTu6s2QLOPa)
-* 
 
 ### Запуск
 ```shell
@@ -19,5 +18,5 @@ docker-compose up -d
 docker exec -it worldskills2022-database-1 bash
 mysql -uworldskills -pworldskills
 
-``USE worldskills;``
+USE worldskills;
 ```
